@@ -498,3 +498,19 @@ body {
         left: 1rem;
     }
 }
+
+/* Enhanced service card animations */
+@keyframes float-gentle {
+    0%, 100% { transform: translateY(0px); }
+    50% { transform: translateY(-3px); }
+}
+
+.card:hover {
+    animation: float-gentle 2s ease-in-out infinite;
+}
+
+/* Improved button hover effects */
+.btn:hover {
+    transform: translateY(-1px);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
