@@ -27,46 +27,61 @@ function loadFounders() {
     const foundersContainer = document.getElementById('founders-container');
     if (foundersContainer) {
         foundersContainer.innerHTML = foundersData.map(founder => `
-            <div class="card p-8 max-w-2xl w-full">
+            <div class="card p-8 max-w-3xl w-full bg-gradient-to-br from-white to-gray-50 shadow-xl hover:shadow-2xl transition-all duration-500">
                 <div class="card-header text-center pb-6">
-                    <!-- รูปภาพหรือไอคอนผู้ก่อตั้ง -->
-                    <div class="w-32 h-32 bg-gradient-to-br from-primary to-primary-glow rounded-full mx-auto mb-6 flex items-center justify-center shadow-lg">
-                        <i class="fas fa-user h-16 w-16 text-white text-4xl"></i>
+                    <!-- รูปภาพผู้ก่อตั้ง -->
+                    <div class="w-40 h-40 mx-auto mb-6 relative">
+                        <img src="https://img5.pic.in.th/file/secure-sv1/IMG_096894d738c727770917.jpg" 
+                             alt="${founder.name}" 
+                             class="w-full h-full object-cover rounded-full border-4 border-white shadow-2xl transition-transform duration-300 hover:scale-105">
+                        <div class="absolute inset-0 rounded-full bg-gradient-to-tr from-primary/20 to-secondary/20 opacity-0 hover:opacity-100 transition-opacity duration-300"></div>
                     </div>
                     
                     <!-- ชื่อและตำแหน่ง -->
-                    <h3 class="card-title text-2xl">${founder.name}</h3>
-                    <p class="card-description text-lg font-medium text-primary">
+                    <h3 class="card-title text-3xl font-bold text-gray-800 mb-2">${founder.name}</h3>
+                    <p class="card-description text-lg font-medium text-primary mb-3">
                         ${founder.position}
                     </p>
-                    <div class="text-secondary font-semibold">
+                    <div class="inline-flex items-center px-4 py-2 bg-secondary/10 rounded-full text-secondary font-semibold text-sm">
+                        <i class="fas fa-star mr-2"></i>
                         ประสบการณ์ ${founder.experience}
                     </div>
                 </div>
                 
-                <div class="card-content space-y-6">
+                <div class="card-content space-y-8">
                     <!-- ความเชี่ยวชาญ -->
-                    <div>
-                        <h4 class="font-semibold mb-2">ความเชี่ยวชาญ:</h4>
-                        <p class="text-muted-foreground">${founder.expertise}</p>
+                    <div class="p-6 bg-primary/5 rounded-lg border-l-4 border-primary">
+                        <h4 class="font-bold text-lg text-primary mb-3 flex items-center">
+                            <i class="fas fa-lightbulb mr-2"></i>
+                            ความเชี่ยวชาญ
+                        </h4>
+                        <p class="text-gray-700 leading-relaxed">${founder.expertise}</p>
                     </div>
                     
                     <!-- ประวัติการศึกษา -->
-                    <div>
-                        <h4 class="font-semibold mb-2">ประวัติการศึกษาและประสบการณ์:</h4>
-                        <p class="text-muted-foreground text-sm leading-relaxed">
+                    <div class="p-6 bg-secondary/5 rounded-lg border-l-4 border-secondary">
+                        <h4 class="font-bold text-lg text-secondary mb-3 flex items-center">
+                            <i class="fas fa-graduation-cap mr-2"></i>
+                            ประวัติการศึกษาและประสบการณ์
+                        </h4>
+                        <p class="text-gray-700 leading-relaxed">
                             ${founder.background}
                         </p>
                     </div>
 
                     <!-- รางวัลและความสำเร็จ -->
-                    <div>
-                        <h4 class="font-semibold mb-3">รางวัลและความสำเร็จ:</h4>
-                        <ul class="space-y-2">
+                    <div class="p-6 bg-gradient-to-r from-yellow-50 to-amber-50 rounded-lg border-l-4 border-yellow-500">
+                        <h4 class="font-bold text-lg text-yellow-700 mb-4 flex items-center">
+                            <i class="fas fa-trophy mr-2"></i>
+                            รางวัลและความสำเร็จ
+                        </h4>
+                        <ul class="space-y-3">
                             ${founder.achievements.map(achievement => `
-                                <li class="flex items-start text-sm text-muted-foreground">
-                                    <i class="fas fa-award h-4 w-4 text-secondary mr-2 mt-0.5 flex-shrink-0"></i>
-                                    ${achievement}
+                                <li class="flex items-start text-gray-700">
+                                    <div class="w-6 h-6 bg-yellow-500 rounded-full flex items-center justify-center mr-3 mt-0.5 flex-shrink-0">
+                                        <i class="fas fa-award text-white text-xs"></i>
+                                    </div>
+                                    <span class="leading-relaxed">${achievement}</span>
                                 </li>
                             `).join('')}
                         </ul>
