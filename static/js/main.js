@@ -191,7 +191,7 @@ function loadFooter() {
                             </li>
                             <li class="flex items-center">
                                 <i class="fas fa-envelope h-4 w-4 mr-2"></i>
-                                info@logithai.com
+                                info@jlktran.com
                             </li>
                             <li class="flex items-start">
                                 <i class="fas fa-map-marker-alt h-4 w-4 mr-2 mt-1"></i>
@@ -249,7 +249,7 @@ function showToast(message, type = 'success') {
 
 // Contact modal functionality
 function showContactModal() {
-    showToast('กรุณาติดต่อเราที่ 02-123-4567 หรือ info@logithai.com', 'success');
+    showToast('กรุณาติดต่อเราที่ 02-123-4567 หรือ info@jlktran.com', 'success');
 }
 
 // Form validation helpers

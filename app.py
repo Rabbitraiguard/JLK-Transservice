@@ -31,7 +31,7 @@ logging.basicConfig(level=logging.INFO)
 logger = logging.getLogger(__name__)
 
 # Database configuration
-DATABASE = 'logithai.db'
+DATABASE = 'jlktran.db'
 
 # Email configuration (configure these with your actual email settings)
 EMAIL_CONFIG = {
@@ -39,7 +39,7 @@ EMAIL_CONFIG = {
     'smtp_port': 587,
     'username': 'your-email@gmail.com',  # Replace with your email
     'password': 'your-app-password',      # Replace with your app password
-    'from_email': 'noreply@logithai.com'
+    'from_email': 'noreply@jlktran.com'
 }
 
 def init_database():
@@ -185,14 +185,14 @@ def submit_quote():
         <body style="font-family: Arial, sans-serif; line-height: 1.6; color: #333;">
             <div style="max-width: 600px; margin: 0 auto; padding: 20px;">
                 <div style="background-color: #1e40af; color: white; padding: 20px; text-align: center;">
-                    <h1>LogiThai Express</h1>
+                    <h1>JLK Transservice</h1>
                     <h2>ขอบคุณสำหรับการขอใบเสนอราคา</h2>
                 </div>
                 
                 <div style="padding: 20px; background-color: #f8fafc;">
                     <p>เรียน คุณ{data['contactName']}</p>
                     
-                    <p>ขอบคุณที่ให้ความสนใจบริการของ LogiThai Express</p>
+                    <p>ขอบคุณที่ให้ความสนใจบริการของ JLK Transservice</p>
                     
                     <p>เราได้รับคำขอใบเสนอราคาของท่านแล้ว (รหัสอ้างอิง: <strong>#{quote_id:06d}</strong>)</p>
                     
@@ -217,14 +217,14 @@ def submit_quote():
                     <div style="background-color: #e0f2fe; padding: 15px; border-radius: 5px; margin: 20px 0;">
                         <p><strong>ติดต่อเรา:</strong></p>
                         <p>📞 02-123-4567<br>
-                        📧 info@logithai.com<br>
+                        📧 info@jlktran.com<br>
                         🕐 จันทร์-ศุกร์ 8:00-18:00 น.</p>
                     </div>
                     
-                    <p>ขอบคุณที่ไว้วางใจ LogiThai Express</p>
+                    <p>ขอบคุณที่ไว้วางใจ JLK Transservice</p>
                     
                     <p>ด้วยความเคารพ<br>
-                    ทีม LogiThai Express</p>
+                    ทีม JLK Transservice</p>
                 </div>
             </div>
         </body>
@@ -274,7 +274,7 @@ def submit_quote():
         '''
         
         send_email(
-            'sales@logithai.com',  # Company email
+            'sales@jlktran.com',  # Company email
             f'คำขอใบเสนอราคาใหม่ #{quote_id:06d} - {data["companyName"]}',
             company_email_html
         )
@@ -330,7 +330,7 @@ def submit_contact():
         customer_email_html = f'''
         <html>
         <body style="font-family: Arial, sans-serif;">
-            <h2>ขอบคุณที่ติดต่อ LogiThai Express</h2>
+            <h2>ขอบคุณที่ติดต่อ JLK Transservice</h2>
             <p>เรียน คุณ{data['name']}</p>
             <p>เราได้รับข้อความของท่านแล้ว เราจะติดต่อกลับโดยเร็วที่สุด</p>
             <p>รหัสอ้างอิง: #{contact_id:06d}</p>
@@ -438,7 +438,7 @@ def health_check():
     return jsonify({
         'status': 'healthy',
         'timestamp': datetime.datetime.now().isoformat(),
-        'service': 'LogiThai Express Backend'
+        'service': 'JLK Transservice Backend'
     })
 
 @app.errorhandler(404)
