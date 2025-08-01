@@ -1,35 +1,10 @@
 // Quote page specific JavaScript
 
 document.addEventListener('DOMContentLoaded', function() {
-    loadAdditionalServices();
     setupForm();
 });
 
-// Load additional services checkboxes
-function loadAdditionalServices() {
-    const additionalServices = [
-        "ประกันภัยสินค้า",
-        "บรรจุหีบห่อพิเศษ",
-        "การติดตาม GPS",
-        "บริการเก็บสินค้า",
-        "การตรวจสอบคุณภาพ",
-        "บริการขนของขึ้น-ลง",
-        "การประกอบ/ติดตั้ง",
-        "บริการด่วนพิเศษ"
-    ];
 
-    const additionalServicesContainer = document.getElementById('additional-services');
-    if (additionalServicesContainer) {
-        additionalServicesContainer.innerHTML = additionalServices.map(service => `
-            <div class="flex items-center space-x-2">
-                <input type="checkbox" id="${service}" name="additionalServices" value="${service}" class="checkbox">
-                <label for="${service}" class="text-sm font-normal">
-                    ${service}
-                </label>
-            </div>
-        `).join('');
-    }
-}
 
 // Setup form functionality
 function setupForm() {
@@ -54,12 +29,7 @@ function handleFormSubmit(event) {
     
     // Collect form data
     for (let [key, value] of formData.entries()) {
-        if (key === 'additionalServices') {
-            if (!data[key]) data[key] = [];
-            data[key].push(value);
-        } else {
-            data[key] = value;
-        }
+        data[key] = value;
     }
 
     // Validate required fields

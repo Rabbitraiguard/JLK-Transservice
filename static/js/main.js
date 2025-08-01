@@ -48,11 +48,17 @@ function loadNavbar() {
                             <i class="fas fa-file-text h-4 w-4"></i>
                             <span>ขอใบเสนอราคา</span>
                         </a>
+                        <a href="contact.html" class="nav-link flex items-center space-x-1 px-3 py-2 text-sm font-medium transition-colors hover:text-primary">
+                            <i class="fas fa-phone h-4 w-4"></i>
+                            <span>ติดต่อเรา</span>
+                        </a>
                         
-                        <!-- ปุ่มติดต่อเรา -->
-                        <button class="btn btn-secondary" onclick="showContactModal()">
-                            ติดต่อเรา
-                        </button>
+                        <!-- ปุ่มขอใบเสนอราคา -->
+                        <a href="quote.html">
+                            <button class="btn btn-secondary">
+                                ขอใบเสนอราคา
+                            </button>
+                        </a>
                     </div>
 
                     <!-- ปุ่มเมนูมือถือ -->
@@ -82,11 +88,17 @@ function loadNavbar() {
                             <i class="fas fa-file-text h-5 w-5"></i>
                             <span>ขอใบเสนอราคา</span>
                         </a>
+                        <a href="contact.html" class="mobile-nav-link flex items-center space-x-2 px-3 py-2 text-base font-medium transition-colors">
+                            <i class="fas fa-phone h-5 w-5"></i>
+                            <span>ติดต่อเรา</span>
+                        </a>
                         
-                        <!-- ปุ่มติดต่อเราสำหรับมือถือ -->
-                        <button class="btn btn-secondary w-full mt-4" onclick="showContactModal()">
-                            ติดต่อเรา
-                        </button>
+                        <!-- ปุ่มขอใบเสนอราคาสำหรับมือถือ -->
+                        <a href="quote.html">
+                            <button class="btn btn-secondary w-full mt-4">
+                                ขอใบเสนอราคา
+                            </button>
+                        </a>
                     </div>
                 </div>
             </div>
@@ -187,15 +199,21 @@ function loadFooter() {
                         <ul class="space-y-2 text-white/80">
                             <li class="flex items-center">
                                 <i class="fas fa-phone h-4 w-4 mr-2"></i>
-                                02-123-4567
+                                0868889745
                             </li>
                             <li class="flex items-center">
                                 <i class="fas fa-envelope h-4 w-4 mr-2"></i>
-                                info@jlktran.com
+                                jlktransservice@gmail.com
                             </li>
                             <li class="flex items-start">
                                 <i class="fas fa-map-marker-alt h-4 w-4 mr-2 mt-1"></i>
-                                <span>123 ถนนสุขุมวิท แขวงคลองเตย<br>เขตคลองเตย กรุงเทพ 10110</span>
+                                <span>1589/137 หมู่ที่ 10 ตำบลสำโรงเหนือ<br>อำเภอเมืองสมุทรปราการ จ.สมุทรปราการ 10270</span>
+                            </li>
+                            <li class="flex items-center">
+                                <i class="fas fa-map h-4 w-4 mr-2"></i>
+                                <a href="https://maps.google.com/?q=1589/137+หมู่ที่+10+ตำบลสำโรงเหนือ+อำเภอเมืองสมุทรปราการ+จ.สมุทรปราการ+10270" target="_blank" class="text-secondary hover:text-secondary/80 transition-colors">
+                                    ดูแผนที่ Google Maps
+                                </a>
                             </li>
                         </ul>
                     </div>
@@ -249,7 +267,7 @@ function showToast(message, type = 'success') {
 
 // Contact modal functionality
 function showContactModal() {
-    showToast('กรุณาติดต่อเราที่ 02-123-4567 หรือ info@jlktran.com', 'success');
+    showToast('กรุณาติดต่อเราที่ 0868889745 หรือ jlktransservice@gmail.com', 'success');
 }
 
 // Form validation helpers
