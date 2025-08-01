@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 """
-LogiThai Express - Python Flask Backend
+JLK Transservice - Python Flask Backend
 บริการโลจิสติกส์ระดับมืออาชีพ
 
 This is the main Python backend application that handles:
@@ -233,7 +233,7 @@ def submit_quote():
         
         send_email(
             data['email'],
-            f'ขอบคุณสำหรับการขอใบเสนอราคา - LogiThai Express #{quote_id:06d}',
+            f'ขอบคุณสำหรับการขอใบเสนอราคา - JLK Transservice #{quote_id:06d}',
             customer_email_html
         )
         
@@ -341,7 +341,7 @@ def submit_contact():
         
         send_email(
             data['email'],
-            f'ขอบคุณที่ติดต่อ LogiThai Express #{contact_id:06d}',
+            f'ขอบคุณที่ติดต่อ JLK Transservice #{contact_id:06d}',
             customer_email_html
         )
         
@@ -460,7 +460,7 @@ if __name__ == '__main__':
     init_database()
     
     # Start the Flask development server
-    print("🚀 Starting LogiThai Express Backend Server...")
+    print("🚀 Starting JLK Transservice Backend Server...")
     print("📋 Available endpoints:")
     print("   - Homepage: http://localhost:5000/")
     print("   - Services: http://localhost:5000/services.html")
