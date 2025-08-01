@@ -25,8 +25,11 @@
     <div id="navbar-container"></div>
 
     <!-- ส่วนหัวหน้า -->
-    <section class="bg-gradient-to-r from-primary to-primary-glow text-white py-20">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <section class="bg-gradient-to-r from-primary to-primary-glow text-white py-20 relative overflow-hidden">
+        <!-- Background Pattern -->
+        <div class="absolute inset-0 opacity-8" 
+             style="background-image: url('data:image/svg+xml,%3Csvg xmlns=\"http://www.w3.org/2000/svg\" width=\"100\" height=\"100\" viewBox=\"0 0 100 100\"%3E%3Cg fill=\"%23ffffff\" fill-opacity=\"0.06\"%3E%3Crect x=\"20\" y=\"20\" width=\"15\" height=\"15\" stroke=\"%23ffffff\" stroke-width=\"1\" fill=\"none\"/%3E%3Ccircle cx=\"70\" cy=\"30\" r=\"8\" fill=\"none\" stroke=\"%23ffffff\" stroke-width=\"1\"/%3E%3Cpath d=\"M30,70 L40,70 L40,80 L30,80 Z\"/%3E%3C/g%3E%3C/svg%3E');"></div>
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
             <div class="text-center">
                 <h1 class="text-4xl md:text-5xl font-bold mb-6">
                     ขอใบเสนอราคา
@@ -40,70 +43,20 @@
     </section>
 
     <!-- เนื้อหาหลัก -->
-    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20">
-        <div class="grid grid-cols-1 lg:grid-cols-3 gap-12">
-            
-            <!-- ข้อมูลติดต่อ -->
-            <div class="lg:col-span-1">
-                <div class="card sticky top-8">
-                    <div class="card-header">
-                        <h3 class="card-title flex items-center">
-                            <i class="fas fa-phone h-5 w-5 mr-2 text-primary"></i>
-                            ติดต่อเรา
-                        </h3>
-                        <p class="card-description">
-                            ช่องทางการติดต่ออื่นๆ หากต้องการความช่วยเหลือเร่งด่วน
-                        </p>
-                    </div>
-                    <div class="card-content space-y-6">
-                        <div class="flex items-start space-x-3">
-                            <i class="fas fa-phone h-5 w-5 text-primary mt-1"></i>
-                            <div>
-                                <div class="font-medium">โทรศัพท์</div>
-                                <div class="text-muted-foreground text-sm">02-123-4567</div>
-                                <div class="text-muted-foreground text-sm">081-234-5678</div>
-                            </div>
-                        </div>
-
-                        <div class="flex items-start space-x-3">
-                            <i class="fas fa-envelope h-5 w-5 text-primary mt-1"></i>
-                            <div>
-                                <div class="font-medium">อีเมล</div>
-                                <div class="text-muted-foreground text-sm">info@jlktran.com</div>
-                                <div class="text-muted-foreground text-sm">sales@jlktran.com</div>
-                            </div>
-                        </div>
-
-                        <div class="flex items-start space-x-3">
-                            <i class="fas fa-map-marker-alt h-5 w-5 text-primary mt-1"></i>
-                            <div>
-                                <div class="font-medium">ที่อยู่</div>
-                                <div class="text-muted-foreground text-sm">123 ถนนสาทร แขวงสีลม</div>
-                                <div class="text-muted-foreground text-sm">เขตบางรัก กรุงเทพฯ 10500</div>
-                            </div>
-                        </div>
-
-                        <div class="flex items-start space-x-3">
-                            <i class="fas fa-clock h-5 w-5 text-primary mt-1"></i>
-                            <div>
-                                <div class="font-medium">เวลาทำการ</div>
-                                <div class="text-muted-foreground text-sm">จันทร์-ศุกร์: 8:00-18:00</div>
-                                <div class="text-muted-foreground text-sm">เสาร์: 8:00-12:00</div>
-                                <div class="text-muted-foreground text-sm">บริการฉุกเฉิน 24/7</div>
-                            </div>
-                        </div>
-
-                        <div class="pt-4 border-t">
-                            <div class="text-sm text-muted-foreground mb-3">
-                                💡 <strong>เคล็ดลับ:</strong> ยิ่งให้ข้อมูลละเอียด ยิ่งได้ราคาที่แม่นยำ
-                            </div>
-                        </div>
-                    </div>
+    <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-20">
+        <div class="bg-white/50 backdrop-blur-sm rounded-xl p-2 mb-8">
+            <div class="text-center p-6">
+                <div class="text-sm text-muted-foreground mb-3">
+                    💡 <strong>เคล็ดลับ:</strong> ยิ่งให้ข้อมูลละเอียด ยิ่งได้ราคาที่แม่นยำ
                 </div>
+                <p class="text-sm text-muted-foreground">
+                    หากต้องการความช่วยเหลือเร่งด่วน สามารถติดต่อเราได้ที่หน้า <a href="contact.html" class="text-primary hover:underline">ติดต่อเรา</a>
+                </p>
             </div>
+        </div>
 
             <!-- ฟอร์มขอใบเสนอราคา -->
-            <div class="lg:col-span-2">
+            <div>
                 <div class="card">
                     <div class="card-header">
                         <h3 class="card-title flex items-center">
@@ -270,13 +223,7 @@
                                 </div>
                             </div>
 
-                            <!-- บริการเสริม -->
-                            <div class="border-t pt-6">
-                                <h3 class="text-lg font-semibold mb-4">บริการเสริม</h3>
-                                <div id="additional-services" class="grid grid-cols-1 md:grid-cols-2 gap-4">
-                                    <!-- Additional services checkboxes will be loaded here -->
-                                </div>
-                            </div>
+
 
                             <!-- รายละเอียดเพิ่มเติม -->
                             <div class="border-t pt-6">

@@ -2,7 +2,6 @@
 
 document.addEventListener('DOMContentLoaded', function() {
     loadMainServices();
-    loadAdditionalServices();
 });
 
 // Load main services data
@@ -121,47 +120,3 @@ function loadMainServices() {
     }
 }
 
-// Load additional services data
-function loadAdditionalServices() {
-    const additionalServicesData = [
-        {
-            icon: "fas fa-truck",
-            title: "ขนส่งภายในประเทศ",
-            description: "บริการขนส่งสินค้าภายในประเทศ ครอบคลุมทุกพื้นที่ในประเทศไทย"
-        },
-        {
-            icon: "fas fa-clock",
-            title: "บริการด่วนพิเศษ",
-            description: "บริการขนส่งด่วนสำหรับสินค้าเร่งด่วน ดำเนินการตลอด 24 ชั่วโมง"
-        },
-        {
-            icon: "fas fa-users",
-            title: "ที่ปรึกษาโลจิสติกส์",
-            description: "ให้คำปรึกษาด้านโลจิสติกส์ วางแผนการขนส่ง และเพิ่มประสิทธิภาพ"
-        }
-    ];
-
-    const additionalServicesContainer = document.getElementById('additional-services-container');
-    if (additionalServicesContainer) {
-        additionalServicesContainer.innerHTML = additionalServicesData.map(service => `
-            <div class="card text-center hover:shadow-lg transition-all duration-300 hover:-translate-y-1">
-                <div class="card-header">
-                    <div class="mx-auto p-4 bg-primary/10 rounded-full w-fit">
-                        <i class="${service.icon} h-10 w-10 text-primary text-3xl"></i>
-                    </div>
-                    <h3 class="card-title text-xl">${service.title}</h3>
-                    <p class="card-description text-base">
-                        ${service.description}
-                    </p>
-                </div>
-                <div class="card-content">
-                    <a href="/quote.html">
-                        <button class="btn btn-outline w-full">
-                            สอบถามเพิ่มเติม
-                        </button>
-                    </a>
-                </div>
-            </div>
-        `).join('');
-    }
-}

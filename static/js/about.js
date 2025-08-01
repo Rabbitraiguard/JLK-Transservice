@@ -11,26 +11,15 @@ function loadFounders() {
     const foundersData = [
         {
             name: "คุณสมชาย ใจดี",
-            position: "ประธานเจ้าหน้าที่บริหาร (CEO)",
+            position: "ประธานเจ้าหน้าที่บริหารและผู้ก่อตั้ง",
             experience: "25+ ปี",
             expertise: "ผู้เชี่ยวชาญด้านการส่งออก-นำเข้า และพิธีการศุลกากร",
-            background: "จบการศึกษาระดับปริญญาโท สาขาการจัดการโลจิสติกส์ จากจุฬาลงกรณ์มหาวิทยาลัย มีประสบการณ์ในอุตสาหกรรมโลจิสติกส์มากกว่า 25 ปี เคยดำรงตำแหน่งผู้บริหารระดับสูงในบริษัทโลจิสติกส์ชั้นนำหลายแห่ง",
+            background: "จบการศึกษาระดับปริญญาโท สาขาการจัดการโลจิสติกส์ จากจุฬาลงกรณ์มหาวิทยาลัย มีประสบการณ์ในอุตสาหกรรมโลจิสติกส์มากกว่า 25 ปี เคยดำรงตำแหน่งผู้บริหารระดับสูงในบริษัทโลจิสติกส์ชั้นนำหลายแห่ง ก่อนตัดสินใจก่อตั้ง JLK Transservice เพื่อให้บริการโลจิสติกส์ที่เป็นเลิศและสร้างสรรค์แก่ลูกค้า",
             achievements: [
                 "รางวัลผู้ประกอบการดีเด่นด้านโลจิสติกส์ ปี 2020",
                 "ที่ปรึกษาคณะกรรมการการค้าระหว่างประเทศ",
-                "วิทยากรในการฝึกอบรมด้านศุลกากรระดับชาติ"
-            ]
-        },
-        {
-            name: "คุณสุรีย์ ชาญโลจิสติกส์",
-            position: "รองประธานเจ้าหน้าที่บริหาร (COO)",
-            experience: "20+ ปี",
-            expertise: "ผู้เชี่ยวชาญด้านการบริหารจัดการและพัฒนาระบบโลจิสติกส์",
-            background: "จบการศึกษาระดับปริญญาโท สาขาการจัดการห่วงโซ่อุปทาน จากมหาวิทยาลัยธรรมศาสตร์ มีประสบการณ์ในการพัฒนาระบบโลจิสติกส์และการบริหารจัดการองค์กรมากกว่า 20 ปี",
-            achievements: [
-                "รางวัลนวัตกรรมด้านโลจิสติกส์ ปี 2019",
-                "ผู้นำในการพัฒนาระบบ Digital Logistics",
-                "กรรมการสมาคมผู้ประกอบการโลจิสติกส์ไทย"
+                "วิทยากรในการฝึกอบรมด้านศุลกากรระดับชาติ",
+                "ผู้นำในการพัฒนาระบบโลจิสติกส์ดิจิทัลในประเทศไทย"
             ]
         }
     ];
@@ -38,11 +27,11 @@ function loadFounders() {
     const foundersContainer = document.getElementById('founders-container');
     if (foundersContainer) {
         foundersContainer.innerHTML = foundersData.map(founder => `
-            <div class="card p-8">
+            <div class="card p-8 max-w-2xl w-full">
                 <div class="card-header text-center pb-6">
                     <!-- รูปภาพหรือไอคอนผู้ก่อตั้ง -->
-                    <div class="w-24 h-24 bg-primary/10 rounded-full mx-auto mb-4 flex items-center justify-center">
-                        <i class="fas fa-user h-12 w-12 text-primary text-3xl"></i>
+                    <div class="w-32 h-32 bg-gradient-to-br from-primary to-primary-glow rounded-full mx-auto mb-6 flex items-center justify-center shadow-lg">
+                        <i class="fas fa-user h-16 w-16 text-white text-4xl"></i>
                     </div>
                     
                     <!-- ชื่อและตำแหน่ง -->
