@@ -106,6 +106,10 @@ body {
 .bg-card { background-color: hsl(var(--card)); }
 .bg-white\/10 { background-color: hsl(0 0% 100% / 0.1); }
 .bg-white\/90 { background-color: hsl(0 0% 100% / 0.9); }
+.bg-gray-50 { background-color: hsl(210 20% 98%); }
+.bg-yellow-50 { background-color: hsl(55 92% 95%); }
+.bg-yellow-500 { background-color: hsl(45 93% 47%); }
+.bg-amber-50 { background-color: hsl(48 100% 96%); }
 
 .text-foreground { color: hsl(var(--foreground)); }
 .text-primary { color: hsl(var(--primary)); }
@@ -119,10 +123,15 @@ body {
 .text-white { color: white; }
 .text-white\/90 { color: hsl(0 0% 100% / 0.9); }
 .text-white\/80 { color: hsl(0 0% 100% / 0.8); }
+.text-gray-700 { color: hsl(217 19% 35%); }
+.text-gray-800 { color: hsl(218 23% 23%); }
+.text-yellow-700 { color: hsl(41 96% 35%); }
 
 .border-primary { border-color: hsl(var(--primary)); }
+.border-secondary { border-color: hsl(var(--secondary)); }
 .border-white { border-color: white; }
 .border-white\/20 { border-color: hsl(0 0% 100% / 0.2); }
+.border-yellow-500 { border-color: hsl(45 93% 47%); }
 
 /* Gradient backgrounds */
 .bg-gradient-to-r.from-primary.to-primary\/70 {
@@ -131,6 +140,18 @@ body {
 
 .bg-gradient-to-r.from-primary.to-primary-glow {
     background: linear-gradient(to right, hsl(var(--primary)), hsl(var(--primary-glow)));
+}
+
+.bg-gradient-to-br.from-white.to-gray-50 {
+    background: linear-gradient(to bottom right, white, hsl(210 20% 98%));
+}
+
+.bg-gradient-to-r.from-yellow-50.to-amber-50 {
+    background: linear-gradient(to right, hsl(55 92% 95%), hsl(48 100% 96%));
+}
+
+.bg-gradient-to-tr.from-primary\/20.to-secondary\/20 {
+    background: linear-gradient(to top right, hsl(var(--primary) / 0.2), hsl(var(--secondary) / 0.2));
 }
 
 /* Button styles */
