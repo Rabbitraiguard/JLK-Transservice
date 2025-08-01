@@ -40,61 +40,82 @@
         
         <!-- Content -->
         <div class="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-white">
-            <div class="max-w-3xl">
-                <!-- Main Heading -->
-                <h1 class="text-4xl md:text-6xl font-bold mb-6 leading-tight">
-                    บริการโลจิสติกส์
-                    <span class="block text-secondary">ระดับมืออาชีพ</span>
-                </h1>
-                
-                <!-- Description -->
-                <p class="text-xl md:text-2xl mb-8 text-white/90 leading-relaxed">
-                    ผู้เชี่ยวชาญด้านการส่งออก นำเข้า และพิธีการทางศุลกากร 
-                    ให้บริการครบวงจรด้วยประสบการณ์กว่า 10 ปี
-                </p>
-                
-                <!-- Buttons -->
-                <div class="flex flex-col sm:flex-row gap-4 mb-12">
-                    <!-- Quote Button -->
-                    <a href="quote.html" class="btn btn-secondary btn-lg inline-flex items-center justify-center">
-                        ขอใบเสนอราคา
-                        <i class="fas fa-arrow-right ml-2 h-5 w-5"></i>
-                    </a>
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+                <!-- Left Column - Text Content -->
+                <div class="max-w-3xl">
+                    <!-- Main Heading -->
+                    <h1 class="text-4xl md:text-6xl font-bold mb-6 leading-tight">
+                        บริการโลจิสติกส์
+                        <span class="block text-secondary">ระดับมืออาชีพ</span>
+                    </h1>
                     
-                    <!-- Services Button -->
-                    <a href="services.html" class="btn btn-outline btn-lg border-white text-white hover:bg-white/10">
-                        ดูบริการของเรา
-                    </a>
-                </div>
+                    <!-- Description -->
+                    <p class="text-xl md:text-2xl mb-8 text-white/90 leading-relaxed">
+                        ผู้เชี่ยวชาญด้านการส่งออก นำเข้า และพิธีการทางศุลกากร 
+                        ให้บริการครบวงจรด้วยประสบการณ์กว่า 10 ปี
+                    </p>
+                    
+                    <!-- Buttons -->
+                    <div class="flex flex-col sm:flex-row gap-4 mb-12">
+                        <!-- Quote Button -->
+                        <a href="quote.html" class="btn btn-secondary btn-lg inline-flex items-center justify-center">
+                            ขอใบเสนอราคา
+                            <i class="fas fa-arrow-right ml-2 h-5 w-5"></i>
+                        </a>
+                        
+                        <!-- Services Button -->
+                        <a href="services.html" class="btn btn-outline btn-lg border-white text-white hover:bg-white/10">
+                            ดูบริการของเรา
+                        </a>
+                    </div>
 
-                <!-- Company Stats -->
-                <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
-                    <div class="flex items-center space-x-3">
-                        <div class="p-3 bg-secondary/20 rounded-lg">
-                            <i class="fas fa-box h-8 w-8 text-secondary"></i>
+                    <!-- Company Stats -->
+                    <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                        <div class="flex items-center space-x-3">
+                            <div class="p-3 bg-secondary/20 rounded-lg">
+                                <i class="fas fa-box h-8 w-8 text-secondary"></i>
+                            </div>
+                            <div>
+                                <div class="text-2xl font-bold">10,000+</div>
+                                <div class="text-white/80">การส่งออกสำเร็จ</div>
+                            </div>
                         </div>
-                        <div>
-                            <div class="text-2xl font-bold">10,000+</div>
-                            <div class="text-white/80">การส่งออกสำเร็จ</div>
+                        <div class="flex items-center space-x-3">
+                            <div class="p-3 bg-secondary/20 rounded-lg">
+                                <i class="fas fa-globe h-8 w-8 text-secondary"></i>
+                            </div>
+                            <div>
+                                <div class="text-2xl font-bold">50+</div>
+                                <div class="text-white/80">ประเทศที่บริการ</div>
+                            </div>
+                        </div>
+                        <div class="flex items-center space-x-3">
+                            <div class="p-3 bg-secondary/20 rounded-lg">
+                                <i class="fas fa-shield-alt h-8 w-8 text-secondary"></i>
+                            </div>
+                            <div>
+                                <div class="text-2xl font-bold">99.9%</div>
+                                <div class="text-white/80">ความปลอดภัย</div>
+                            </div>
                         </div>
                     </div>
-                    <div class="flex items-center space-x-3">
-                        <div class="p-3 bg-secondary/20 rounded-lg">
-                            <i class="fas fa-globe h-8 w-8 text-secondary"></i>
-                        </div>
-                        <div>
-                            <div class="text-2xl font-bold">50+</div>
-                            <div class="text-white/80">ประเทศที่บริการ</div>
-                        </div>
+                </div>
+                
+                <!-- Right Column - Hero Image -->
+                <div class="relative lg:order-last order-first">
+                    <div class="relative overflow-hidden rounded-2xl shadow-2xl">
+                        <img src="/static/images/logistics-hero.jpg" 
+                             alt="JLK Transservice Logistics Operations" 
+                             class="w-full h-auto object-cover">
+                        <!-- Overlay for better text contrast if needed -->
+                        <div class="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent"></div>
                     </div>
-                    <div class="flex items-center space-x-3">
-                        <div class="p-3 bg-secondary/20 rounded-lg">
-                            <i class="fas fa-shield-alt h-8 w-8 text-secondary"></i>
-                        </div>
-                        <div>
-                            <div class="text-2xl font-bold">99.9%</div>
-                            <div class="text-white/80">ความปลอดภัย</div>
-                        </div>
+                    
+                    <!-- Floating badge -->
+                    <div class="absolute -bottom-6 -left-6 bg-secondary text-primary-foreground px-6 py-4 rounded-xl shadow-lg">
+                        <div class="text-sm font-semibold">มากกว่า</div>
+                        <div class="text-2xl font-bold">15 ปี</div>
+                        <div class="text-sm">ประสบการณ์</div>
                     </div>
                 </div>
             </div>

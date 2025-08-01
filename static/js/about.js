@@ -29,9 +29,9 @@ function loadFounders() {
         foundersContainer.innerHTML = foundersData.map(founder => `
             <div class="card p-8 max-w-2xl w-full">
                 <div class="card-header text-center pb-6">
-                    <!-- รูปภาพหรือไอคอนผู้ก่อตั้ง -->
-                    <div class="w-32 h-32 bg-gradient-to-br from-primary to-primary-glow rounded-full mx-auto mb-6 flex items-center justify-center shadow-lg">
-                        <i class="fas fa-user h-16 w-16 text-white text-4xl"></i>
+                    <!-- รูปภาพผู้ก่อตั้ง -->
+                    <div class="w-32 h-32 mx-auto mb-6 shadow-lg">
+                        <img src="/static/images/founder.jpg" alt="${founder.name}" class="w-full h-full object-cover rounded-full border-4 border-primary/20">
                     </div>
                     
                     <!-- ชื่อและตำแหน่ง -->
