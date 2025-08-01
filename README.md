@@ -1,6 +1,6 @@
-# LogiThai Express Website
+# JLK Transservice Website
 
-ระบบเว็บไซต์สำหรับบริษัท LogiThai Express ให้บริการโลจิสติกส์ครบวงจร
+ระบบเว็บไซต์สำหรับบริษัท JLK Transservice ให้บริการโลจิสติกส์ครบวงจร
 
 ## โครงสร้างเว็บไซต์
 
